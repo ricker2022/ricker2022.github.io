@@ -12,8 +12,8 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const STATUS_LIST = ["待報價", "已報價", "報價回簽中", "製作中", "修改中", "結案", "待請款", "已請款", "款項已入帳"];
-const CUSTOMERS = ["BRITA", "待新增"];
+const STATUS_LIST = ["待報價", "已報價", "報價回簽中", "製作中", "客戶確認中", "結案", "待請款", "已請款", "款項已入帳"];
+const CUSTOMERS = ["B客戶", "-"];
 
 const PRICE_LEVEL = {
   website: { high: 20000, normal: 15000 },
@@ -30,7 +30,7 @@ const STATUS_PROGRESS = {
   "已報價": 10,
   "報價回簽中": 20,
   "製作中": 50,
-  "修改中": 70,
+  "客戶確認中": 70,
   "結案": 80,
   "待請款": 85,
   "已請款": 90,
@@ -42,7 +42,7 @@ const STATUS_COLOR = {
   "已報價": "#ef4444",
   "報價回簽中": "#facc15",
   "製作中": "#facc15",
-  "修改中": "#facc15",
+  "客戶確認中": "#facc15",
   "結案": "#22c55e",
   "待請款": "#22c55e",
   "已請款": "#22c55e",
